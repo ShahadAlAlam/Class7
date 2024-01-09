@@ -1,10 +1,10 @@
 package org.example;
 
-public class Rikshaw extends Vehicle{
-    Rikshaw(){
+public class Cycle extends Vehicle {
+    Cycle(){
         super();
     }
-    public Rikshaw(int wheels, boolean hasEngine) {
+    public Cycle(int wheels, boolean hasEngine) {
         super(wheels, hasEngine);
 //        this.wheels = wheels;
 //        this.hasEngine = hasEngine;
@@ -29,6 +29,10 @@ public class Rikshaw extends Vehicle{
 
 
     public void move(){
-        System.out.println("Rikshaw is moving on "+super.getWheels()+" wheels and has "+(super.isHasEngine()==true?" engine":" no engine"));
+        System.out.println("Cycle is moving on "+super.getWheels()+" wheels and has "+(super.isHasEngine()==true?" engine":" no engine"));
+    }
+
+    public void sounds(){
+        System.out.println("tring tring");
     }
 }
